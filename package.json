@@ -10,7 +10,7 @@
     "install-all": "npm install && cd server && npm install && cd ../client && npm install",
     "build": "cd client && npm run build",
     "start": "cd server && npm start",
-    "startall": "cd server && npm install && cd ../client && npm install && cd .. && npm run dev"
+    "startall": "cd server && npm install && cd ../client && npm install && cd .. && concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "social-media",
