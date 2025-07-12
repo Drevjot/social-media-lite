@@ -9,12 +9,19 @@
     "client": "cd client && npm run dev",
     "install-all": "npm install && cd server && npm install && cd ../client && npm install",
     "build": "cd client && npm run build",
-    "start": "cd server && npm start"
+    "start": "cd server && npm start",
+    "startall": "cd server && npm install && cd ../client && npm install && cd .. && npm run dev"
   },
-  "keywords": ["social-media", "mern", "react", "node", "mongodb"],
+  "keywords": [
+    "social-media",
+    "mern",
+    "react",
+    "node",
+    "mongodb"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
-} 
+}
